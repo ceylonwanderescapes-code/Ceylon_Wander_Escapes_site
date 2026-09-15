@@ -1,0 +1,2403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Ceylon Wander Escapes - Tailor-made Sri Lanka holidays, wildlife safaris, beaches, tea country, culture and adventure."
+  />
+
+  <title>Ceylon Wander Escapes | Explore Sri Lanka</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            sans: ["Inter", "sans-serif"]
+          },
+
+          colors: {
+            ink: "#10251d",
+            forest: "#0d3b2e",
+            leaf: "#2f6b4e",
+            sand: "#f4efe4",
+            gold: "#c99b52",
+            cream: "#faf8f3"
+          },
+
+          boxShadow: {
+            soft: "0 25px 80px rgba(13,59,46,.12)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- LUCIDE -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .hero-overlay {
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4,22,15,.84) 0%,
+          rgba(4,22,15,.56) 40%,
+          rgba(4,22,15,.20) 73%,
+          rgba(4,22,15,.08) 100%
+        );
+    }
+
+    .card-img {
+      transition: transform .7s cubic-bezier(.2,.7,.2,1);
+    }
+
+    .group:hover .card-img {
+      transform: scale(1.07);
+    }
+
+    .soft-grid {
+      background-image:
+        linear-gradient(
+          rgba(13,59,46,.035) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(13,59,46,.035) 1px,
+          transparent 1px
+        );
+
+      background-size: 30px 30px;
+    }
+
+    .logo-mark {
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,.08));
+    }
+
+  </style>
+
+</head>
+
+
+<body class="bg-white text-ink font-sans">
+
+
+  <!-- ======================================================
+       TOP BAR
+  ======================================================= -->
+
+  <div class="bg-ink text-white">
+
+    <div
+      class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2.5 text-xs sm:px-6 lg:px-8"
+    >
+
+      <div class="flex items-center gap-2">
+
+        <span
+          class="h-2 w-2 rounded-full bg-emerald-300"
+        ></span>
+
+        <span class="font-medium">
+          Tailor-made Sri Lanka journeys
+        </span>
+
+      </div>
+
+
+      <a
+        href="tel:+94742230809"
+        class="hidden items-center gap-2 font-semibold hover:text-emerald-200 sm:flex"
+      >
+
+        <i
+          data-lucide="phone"
+          class="h-3.5 w-3.5"
+        ></i>
+
+        +94 74 223 0809
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ======================================================
+       NAVIGATION
+  ======================================================= -->
+
+  <header class="absolute left-0 right-0 top-9 z-50">
+
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+      <nav
+        class="flex items-center justify-between rounded-2xl border border-white/20 bg-black/15 px-3 py-2 text-white backdrop-blur-md"
+      >
+
+        <!-- LOGO -->
+
+        <a
+          href="#"
+          class="flex items-center"
+        >
+
+          <div
+            class="rounded-xl bg-white/95 p-1.5 shadow-lg"
+          >
+
+            <img
+              src="ceylon-wander-logo.png"
+              alt="Ceylon Wander Escapes"
+              class="logo-mark h-14 w-14 rounded-lg object-contain sm:h-16 sm:w-16"
+            />
+
+          </div>
+
+        </a>
+
+
+        <!-- DESKTOP MENU -->
+
+        <div
+          class="hidden items-center gap-8 text-sm font-medium lg:flex"
+        >
+
+          <a
+            href="#experiences"
+            class="transition hover:text-emerald-200"
+          >
+            Experiences
+          </a>
+
+          <a
+            href="#journeys"
+            class="transition hover:text-emerald-200"
+          >
+            Journeys
+          </a>
+
+          <a
+            href="#destinations"
+            class="transition hover:text-emerald-200"
+          >
+            Destinations
+          </a>
+
+          <a
+            href="#about"
+            class="transition hover:text-emerald-200"
+          >
+            About
+          </a>
+
+          <a
+            href="#contact"
+            class="transition hover:text-emerald-200"
+          >
+            Contact
+          </a>
+
+        </div>
+
+
+        <!-- CTA -->
+
+        <a
+          href="#contact"
+          class="hidden items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-forest shadow-xl transition hover:-translate-y-0.5 hover:bg-emerald-50 sm:flex"
+        >
+
+          Plan My Trip
+
+          <i
+            data-lucide="arrow-up-right"
+            class="h-4 w-4"
+          ></i>
+
+        </a>
+
+
+        <!-- MOBILE -->
+
+        <button
+          id="menuButton"
+          class="grid h-10 w-10 place-items-center rounded-xl border border-white/20 lg:hidden"
+          aria-label="Open menu"
+        >
+
+          <i
+            data-lucide="menu"
+            class="h-5 w-5"
+          ></i>
+
+        </button>
+
+      </nav>
+
+
+      <!-- MOBILE MENU -->
+
+      <div
+        id="mobileMenu"
+        class="mt-2 hidden rounded-2xl border border-white/10 bg-ink/95 p-4 text-white shadow-2xl backdrop-blur-xl lg:hidden"
+      >
+
+        <div class="grid gap-1">
+
+          <a
+            href="#experiences"
+            class="rounded-xl px-4 py-3 text-sm hover:bg-white/10"
+          >
+            Experiences
+          </a>
+
+          <a
+            href="#journeys"
+            class="rounded-xl px-4 py-3 text-sm hover:bg-white/10"
+          >
+            Journeys
+          </a>
+
+          <a
+            href="#destinations"
+            class="rounded-xl px-4 py-3 text-sm hover:bg-white/10"
+          >
+            Destinations
+          </a>
+
+          <a
+            href="#about"
+            class="rounded-xl px-4 py-3 text-sm hover:bg-white/10"
+          >
+            About
+          </a>
+
+          <a
+            href="#contact"
+            class="rounded-xl px-4 py-3 text-sm hover:bg-white/10"
+          >
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ======================================================
+       HERO
+  ======================================================= -->
+
+  <section
+    class="relative min-h-[800px] overflow-hidden bg-ink"
+  >
+
+    <!-- NEW SRI LANKAN HERO IMAGE - HAPUTALE -->
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:FilePath/Haputale%2C%20Sri%20Lanka%2C%20Tea%20plantations.jpg?width=2200"
+      alt="Haputale tea plantations Sri Lanka"
+      class="absolute inset-0 h-full w-full object-cover"
+      onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Haputale%2C%20Sri%20Lanka%2C%20Trees%20in%20clouds%2C%20Tea%20estate.jpg?width=2200';"
+    />
+
+
+    <div
+      class="hero-overlay absolute inset-0"
+    ></div>
+
+
+    <div
+      class="relative mx-auto flex min-h-[800px] max-w-7xl items-end px-5 pb-24 pt-44 sm:px-6 lg:px-8 lg:pb-28"
+    >
+
+      <div class="max-w-4xl text-white">
+
+
+        <!-- LOGO BADGE -->
+
+        <div
+          class="mb-7 inline-flex items-center gap-4 rounded-2xl border border-white/20 bg-white/10 p-3 backdrop-blur-md"
+        >
+
+          <img
+            src="ceylon-wander-logo.png"
+            alt="Ceylon Wander Escapes logo"
+            class="h-14 w-14 rounded-xl bg-white object-contain"
+          />
+
+
+          <div>
+
+            <p
+              class="text-[10px] font-bold uppercase tracking-[.25em] text-emerald-200"
+            >
+              Ceylon Wander Escapes
+            </p>
+
+            <p
+              class="mt-1 text-xs text-white/70"
+            >
+              Explore · Experience · Sri Lanka
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <h1
+          class="font-display text-5xl font-bold leading-[.95] tracking-tight sm:text-6xl lg:text-8xl"
+        >
+
+          Wander beyond
+
+          <br />
+
+          <span
+            class="italic text-emerald-200"
+          >
+            the obvious.
+          </span>
+
+        </h1>
+
+
+        <p
+          class="mt-7 max-w-2xl text-base leading-8 text-white/80 sm:text-lg"
+        >
+          Discover Sri Lanka through beautifully planned journeys —
+          from ancient kingdoms and misty tea hills to wild safaris,
+          hidden beaches and unforgettable local experiences.
+        </p>
+
+
+        <div
+          class="mt-9 flex flex-col gap-3 sm:flex-row"
+        >
+
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-bold text-forest shadow-xl transition hover:-translate-y-1 hover:bg-emerald-50"
+          >
+
+            Start Your Journey
+
+            <i
+              data-lucide="arrow-right"
+              class="h-4 w-4"
+            ></i>
+
+          </a>
+
+
+          <a
+            href="#journeys"
+            class="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-7 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/10"
+          >
+
+            Explore Journeys
+
+          </a>
+
+        </div>
+
+
+        <div
+          class="mt-10 flex flex-wrap gap-x-8 gap-y-4 text-xs font-medium text-white/65"
+        >
+
+          <span class="flex items-center gap-2">
+
+            <i
+              data-lucide="map"
+              class="h-4 w-4"
+            ></i>
+
+            Tailor-made itineraries
+
+          </span>
+
+
+          <span class="flex items-center gap-2">
+
+            <i
+              data-lucide="heart"
+              class="h-4 w-4"
+            ></i>
+
+            Couples & families
+
+          </span>
+
+
+          <span class="flex items-center gap-2">
+
+            <i
+              data-lucide="leaf"
+              class="h-4 w-4"
+            ></i>
+
+            Nature & culture
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       TRIP PLANNER
+  ======================================================= -->
+
+  <section
+    class="relative z-20 -mt-10 px-5 sm:px-6 lg:px-8"
+  >
+
+    <div
+      class="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-white p-5 shadow-soft sm:p-7"
+    >
+
+      <div
+        class="grid gap-5 lg:grid-cols-[1.2fr_1fr_1fr_1fr_auto] lg:items-end"
+      >
+
+        <div>
+
+          <p
+            class="text-[10px] font-bold uppercase tracking-[.25em] text-leaf"
+          >
+            Plan your escape
+          </p>
+
+          <h2
+            class="mt-2 text-xl font-bold"
+          >
+            Your Sri Lanka starts here.
+          </h2>
+
+        </div>
+
+
+        <div>
+
+          <label
+            class="mb-2 block text-[10px] font-bold uppercase tracking-[.18em] text-slate-500"
+          >
+            Travel style
+          </label>
+
+          <select
+            class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none focus:border-forest"
+          >
+
+            <option>Tailor-made</option>
+            <option>Honeymoon</option>
+            <option>Family</option>
+            <option>Adventure</option>
+            <option>Wildlife</option>
+
+          </select>
+
+        </div>
+
+
+        <div>
+
+          <label
+            class="mb-2 block text-[10px] font-bold uppercase tracking-[.18em] text-slate-500"
+          >
+            Trip length
+          </label>
+
+          <select
+            class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none focus:border-forest"
+          >
+
+            <option>5 - 7 Days</option>
+            <option>8 - 10 Days</option>
+            <option>11 - 14 Days</option>
+            <option>15+ Days</option>
+
+          </select>
+
+        </div>
+
+
+        <div>
+
+          <label
+            class="mb-2 block text-[10px] font-bold uppercase tracking-[.18em] text-slate-500"
+          >
+            Interest
+          </label>
+
+          <select
+            class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none focus:border-forest"
+          >
+
+            <option>Beaches</option>
+            <option>Wildlife</option>
+            <option>Culture</option>
+            <option>Tea Country</option>
+            <option>Adventure</option>
+            <option>Everything</option>
+
+          </select>
+
+        </div>
+
+
+        <a
+          href="#contact"
+          class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-forest px-5 text-sm font-bold text-white transition hover:bg-ink"
+        >
+
+          Let's Talk
+
+          <i
+            data-lucide="arrow-up-right"
+            class="h-4 w-4"
+          ></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       INTRO
+  ======================================================= -->
+
+  <section
+    class="px-5 py-24 sm:px-6 lg:px-8 lg:py-32"
+  >
+
+    <div
+      class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-end"
+    >
+
+      <div>
+
+        <p
+          class="text-xs font-bold uppercase tracking-[.24em] text-leaf"
+        >
+          Why Sri Lanka?
+        </p>
+
+
+        <h2
+          class="mt-4 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl"
+        >
+
+          One island.
+
+          <br />
+
+          <span
+            class="italic text-leaf"
+          >
+            Many worlds.
+          </span>
+
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p
+          class="text-lg leading-8 text-slate-600"
+        >
+          Sri Lanka packs an extraordinary variety of landscapes and
+          experiences into one beautiful island. Ancient cities,
+          tropical forests, tea-covered mountains, golden beaches and
+          incredible wildlife are all within reach.
+        </p>
+
+
+        <div
+          class="mt-8 flex flex-wrap gap-3"
+        >
+
+          <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-forest">
+            Heritage
+          </span>
+
+          <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-forest">
+            Wildlife
+          </span>
+
+          <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-forest">
+            Tea Country
+          </span>
+
+          <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-forest">
+            Beaches
+          </span>
+
+          <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-forest">
+            Adventure
+          </span>
+
+          <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-forest">
+            Wellness
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       EXPERIENCES
+  ======================================================= -->
+
+  <section
+    id="experiences"
+    class="bg-sand px-5 py-24 sm:px-6 lg:px-8 lg:py-28"
+  >
+
+    <div class="mx-auto max-w-7xl">
+
+      <div
+        class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end"
+      >
+
+        <div>
+
+          <p
+            class="text-xs font-bold uppercase tracking-[.24em] text-leaf"
+          >
+            Travel by feeling
+          </p>
+
+          <h2
+            class="mt-3 font-display text-4xl font-bold sm:text-5xl"
+          >
+            Choose your escape.
+          </h2>
+
+        </div>
+
+
+        <p
+          class="max-w-md text-sm leading-6 text-slate-600"
+        >
+          Tell us what excites you and we will build the perfect
+          combination of places, stays and experiences.
+        </p>
+
+      </div>
+
+
+
+      <div
+        class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+      >
+
+
+        <!-- BEACH -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Morning%20view%20of%20Tangalla%20beach%2C%20Sri%20Lanka.jpg?width=1200"
+            alt="Tangalla Beach Sri Lanka"
+            class="card-img absolute inset-0 h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Beach%20of%20Tangalla.jpg?width=1200';"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <div
+              class="mb-4 grid h-11 w-11 place-items-center rounded-full bg-white/15 backdrop-blur"
+            >
+
+              <i
+                data-lucide="waves"
+                class="h-5 w-5"
+              ></i>
+
+            </div>
+
+
+            <h3
+              class="font-display text-2xl font-bold"
+            >
+              Sun & Beach
+            </h3>
+
+
+            <p
+              class="mt-1 text-sm text-white/70"
+            >
+              Golden beaches, surf, sunsets and slow mornings.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- CULTURE -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%20Sri%20Lanka.jpg?width=1200"
+            alt="Sigiriya Sri Lanka"
+            class="card-img absolute inset-0 h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/20160124%20Sri%20Lanka%203826%20Sigiriya%20sRGB%20%2825649808532%29.jpg?width=1200';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <div
+              class="mb-4 grid h-11 w-11 place-items-center rounded-full bg-white/15 backdrop-blur"
+            >
+
+              <i
+                data-lucide="landmark"
+                class="h-5 w-5"
+              ></i>
+
+            </div>
+
+
+            <h3
+              class="font-display text-2xl font-bold"
+            >
+              Culture & Heritage
+            </h3>
+
+
+            <p
+              class="mt-1 text-sm text-white/70"
+            >
+              Ancient cities, temples, forts and living traditions.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- WILDLIFE -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Elephant%20in%20Yala.jpg?width=1400"
+            alt="Elephant in Yala National Park Sri Lanka"
+            class="card-img absolute inset-0 h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Elefant%20Yala%20Nationalpark.jpg?width=1400';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <div
+              class="mb-4 grid h-11 w-11 place-items-center rounded-full bg-white/15 backdrop-blur"
+            >
+
+              <i
+                data-lucide="paw-print"
+                class="h-5 w-5"
+              ></i>
+
+            </div>
+
+
+            <h3
+              class="font-display text-2xl font-bold"
+            >
+              Wildlife & Safari
+            </h3>
+
+
+            <p
+              class="mt-1 text-sm leading-6 text-white/75"
+            >
+              Meet elephants, leopards and incredible wildlife in the wild.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- TEA -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Haputale%2C%20Sri%20Lanka%2C%20Tea%20plantations.jpg?width=1200"
+            alt="Tea plantations near Haputale Sri Lanka"
+            class="card-img absolute inset-0 h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Haputale%2C%20Sri%20Lanka%2C%20Trees%20in%20clouds%2C%20Tea%20estate.jpg?width=1200';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <div
+              class="mb-4 grid h-11 w-11 place-items-center rounded-full bg-white/15 backdrop-blur"
+            >
+
+              <i
+                data-lucide="coffee"
+                class="h-5 w-5"
+              ></i>
+
+            </div>
+
+
+            <h3
+              class="font-display text-2xl font-bold"
+            >
+              Tea Country
+            </h3>
+
+
+            <p
+              class="mt-1 text-sm text-white/70"
+            >
+              Misty mountains, tea estates and scenic train journeys.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- ADVENTURE -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Ella%20Gap%20%28Valley%29%2C%20mountains%20of%20Sri%20Lanka.jpg?width=1200"
+            alt="Ella mountains Sri Lanka"
+            class="card-img absolute inset-0 h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Ella%2C%20Sri%20Lanka%2C%20Mountains%20in%20clouds%202.jpg?width=1200';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <div
+              class="mb-4 grid h-11 w-11 place-items-center rounded-full bg-white/15 backdrop-blur"
+            >
+
+              <i
+                data-lucide="mountain"
+                class="h-5 w-5"
+              ></i>
+
+            </div>
+
+
+            <h3
+              class="font-display text-2xl font-bold"
+            >
+              Adventure
+            </h3>
+
+
+            <p
+              class="mt-1 text-sm text-white/70"
+            >
+              Hiking, surfing, rafting and unforgettable outdoor moments.
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- WELLNESS -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Morning%20view%20of%20Tangalla%20beach%2C%20Sri%20Lanka.jpg?width=1200"
+            alt="Sri Lanka tropical wellness escape"
+            class="card-img absolute inset-0 h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Beach%20of%20Tangalla.jpg?width=1200';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <div
+              class="mb-4 grid h-11 w-11 place-items-center rounded-full bg-white/15 backdrop-blur"
+            >
+
+              <i
+                data-lucide="sparkles"
+                class="h-5 w-5"
+              ></i>
+
+            </div>
+
+
+            <h3
+              class="font-display text-2xl font-bold"
+            >
+              Wellness & Slow Travel
+            </h3>
+
+
+            <p
+              class="mt-1 text-sm text-white/70"
+            >
+              Ayurveda, peaceful stays and time to reconnect.
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       JOURNEYS
+  ======================================================= -->
+
+  <section
+    id="journeys"
+    class="px-5 py-24 sm:px-6 lg:px-8 lg:py-32"
+  >
+
+    <div class="mx-auto max-w-7xl">
+
+      <div
+        class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end"
+      >
+
+        <div>
+
+          <p
+            class="text-xs font-bold uppercase tracking-[.24em] text-leaf"
+          >
+            Travel inspiration
+          </p>
+
+
+          <h2
+            class="mt-3 font-display text-4xl font-bold sm:text-5xl"
+          >
+            Signature journeys.
+          </h2>
+
+        </div>
+
+
+        <a
+          href="#contact"
+          class="inline-flex items-center gap-2 text-sm font-bold text-forest hover:text-leaf"
+        >
+
+          Build a custom route
+
+          <i
+            data-lucide="arrow-right"
+            class="h-4 w-4"
+          ></i>
+
+        </a>
+
+      </div>
+
+
+
+      <div
+        class="mt-10 grid gap-6 lg:grid-cols-3"
+      >
+
+
+        <!-- SIGIRIYA JOURNEY -->
+
+        <article
+          class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+        >
+
+          <div
+            class="relative h-64 overflow-hidden"
+          >
+
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%20Sri%20Lanka.jpg?width=1400"
+              alt="Sigiriya Rock Fortress Sri Lanka"
+              class="card-img h-full w-full object-cover"
+              onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/20160124%20Sri%20Lanka%203826%20Sigiriya%20sRGB%20%2825649808532%29.jpg?width=1400';"
+            />
+
+
+            <div
+              class="absolute left-5 top-5 rounded-full bg-white px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-forest shadow"
+            >
+              7 Days · Private
+            </div>
+
+          </div>
+
+
+          <div class="p-7">
+
+            <p
+              class="text-xs font-bold uppercase tracking-[.18em] text-gold"
+            >
+              Heritage + Hills + Coast
+            </p>
+
+
+            <h3
+              class="mt-2 font-display text-2xl font-bold"
+            >
+              The Island Highlights
+            </h3>
+
+
+            <p
+              class="mt-3 text-sm leading-7 text-slate-600"
+            >
+              Explore Sigiriya, Kandy, Ella and the southern coast
+              in one beautifully balanced introduction to Sri Lanka.
+            </p>
+
+
+            <a
+              href="#contact"
+              class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-forest"
+            >
+
+              Shape this journey
+
+              <i
+                data-lucide="arrow-right"
+                class="h-4 w-4"
+              ></i>
+
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- WILDLIFE JOURNEY -->
+
+        <article
+          class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+        >
+
+          <div
+            class="relative h-64 overflow-hidden"
+          >
+
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Elephant%20in%20Yala.jpg?width=1400"
+              alt="Sri Lankan elephant safari"
+              class="card-img h-full w-full object-cover"
+              onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Elefant%20Yala%20Nationalpark.jpg?width=1400';"
+            />
+
+
+            <div
+              class="absolute left-5 top-5 rounded-full bg-white px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-forest shadow"
+            >
+              8 Days · Wildlife
+            </div>
+
+          </div>
+
+
+          <div class="p-7">
+
+            <p
+              class="text-xs font-bold uppercase tracking-[.18em] text-gold"
+            >
+              Wildlife + Wilderness
+            </p>
+
+
+            <h3
+              class="mt-2 font-display text-2xl font-bold"
+            >
+              Into the Wild
+            </h3>
+
+
+            <p
+              class="mt-3 text-sm leading-7 text-slate-600"
+            >
+              Combine culture, safari country and the southern coast
+              with time for early game drives and relaxed afternoons.
+            </p>
+
+
+            <a
+              href="#contact"
+              class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-forest"
+            >
+
+              Shape this journey
+
+              <i
+                data-lucide="arrow-right"
+                class="h-4 w-4"
+              ></i>
+
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- HONEYMOON -->
+
+        <article
+          class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+        >
+
+          <div
+            class="relative h-64 overflow-hidden"
+          >
+
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Morning%20view%20of%20Tangalla%20beach%2C%20Sri%20Lanka.jpg?width=1400"
+              alt="Sri Lanka romantic beach"
+              class="card-img h-full w-full object-cover"
+              onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Beach%20of%20Tangalla.jpg?width=1400';"
+            />
+
+
+            <div
+              class="absolute left-5 top-5 rounded-full bg-white px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-forest shadow"
+            >
+              8 Days · Couples
+            </div>
+
+          </div>
+
+
+          <div class="p-7">
+
+            <p
+              class="text-xs font-bold uppercase tracking-[.18em] text-gold"
+            >
+              Romance + Relaxation
+            </p>
+
+
+            <h3
+              class="mt-2 font-display text-2xl font-bold"
+            >
+              Coast & Country for Two
+            </h3>
+
+
+            <p
+              class="mt-3 text-sm leading-7 text-slate-600"
+            >
+              Tea-country scenery, scenic rail journeys, boutique
+              stays and beautiful beach days designed for two.
+            </p>
+
+
+            <a
+              href="#contact"
+              class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-forest"
+            >
+
+              Shape this journey
+
+              <i
+                data-lucide="arrow-right"
+                class="h-4 w-4"
+              ></i>
+
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       ABOUT
+  ======================================================= -->
+
+  <section
+    id="about"
+    class="bg-ink px-5 py-24 text-white sm:px-6 lg:px-8 lg:py-32"
+  >
+
+    <div
+      class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2 lg:items-center"
+    >
+
+      <div class="relative">
+
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/20160126%20Sri%20Lanka%204025%20Kandy%20sRGB%20%2825648664742%29.jpg?width=1400"
+          alt="Kandy Sri Lanka"
+          class="h-[580px] w-full rounded-[2rem] object-cover"
+          onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/20160126%20Sri%20Lanka%204020%20sRGB%20%2825468941340%29.jpg?width=1400';"
+        />
+
+
+        <div
+          class="absolute -bottom-7 -right-3 max-w-xs rounded-2xl bg-white p-6 text-ink shadow-soft sm:-right-6"
+        >
+
+          <div
+            class="text-[10px] font-bold uppercase tracking-[.18em] text-leaf"
+          >
+            Our philosophy
+          </div>
+
+
+          <div
+            class="mt-3 font-display text-xl font-bold leading-snug"
+          >
+            The best journeys leave a little room to wander.
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div>
+
+        <p
+          class="text-xs font-bold uppercase tracking-[.25em] text-emerald-300"
+        >
+          The Ceylon Wander way
+        </p>
+
+
+        <h2
+          class="mt-4 font-display text-4xl font-bold leading-tight sm:text-5xl"
+        >
+
+          Less ticking boxes.
+
+          <br />
+
+          <span class="italic text-emerald-200">
+            More living the island.
+          </span>
+
+        </h2>
+
+
+        <p
+          class="mt-6 max-w-xl text-base leading-8 text-white/70"
+        >
+          A memorable Sri Lanka holiday is not about rushing between
+          attractions. It is about finding the right rhythm — the right
+          places, the right experiences and enough space to enjoy them.
+        </p>
+
+
+        <div
+          class="mt-10 grid gap-8 sm:grid-cols-2"
+        >
+
+          <div class="flex gap-4">
+
+            <div
+              class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10"
+            >
+
+              <i
+                data-lucide="route"
+                class="h-5 w-5 text-emerald-200"
+              ></i>
+
+            </div>
+
+
+            <div>
+
+              <h3 class="font-semibold">
+                Tailor-made routes
+              </h3>
+
+              <p
+                class="mt-1 text-sm leading-6 text-white/55"
+              >
+                Build your trip around your interests and travel style.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <div
+              class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10"
+            >
+
+              <i
+                data-lucide="calendar-check"
+                class="h-5 w-5 text-emerald-200"
+              ></i>
+
+            </div>
+
+
+            <div>
+
+              <h3 class="font-semibold">
+                Easy planning
+              </h3>
+
+              <p
+                class="mt-1 text-sm leading-6 text-white/55"
+              >
+                Clear itineraries without unnecessary complexity.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <div
+              class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10"
+            >
+
+              <i
+                data-lucide="users"
+                class="h-5 w-5 text-emerald-200"
+              ></i>
+
+            </div>
+
+
+            <div>
+
+              <h3 class="font-semibold">
+                Personal support
+              </h3>
+
+              <p
+                class="mt-1 text-sm leading-6 text-white/55"
+              >
+                Friendly help before and during your journey.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <div
+              class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10"
+            >
+
+              <i
+                data-lucide="leaf"
+                class="h-5 w-5 text-emerald-200"
+              ></i>
+
+            </div>
+
+
+            <div>
+
+              <h3 class="font-semibold">
+                Authentic experiences
+              </h3>
+
+              <p
+                class="mt-1 text-sm leading-6 text-white/55"
+              >
+                Go beyond the obvious and experience real island life.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <a
+          href="#contact"
+          class="mt-10 inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-bold text-forest transition hover:bg-emerald-50"
+        >
+
+          Start a conversation
+
+          <i
+            data-lucide="arrow-up-right"
+            class="h-4 w-4"
+          ></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       DESTINATIONS
+  ======================================================= -->
+
+  <section
+    id="destinations"
+    class="soft-grid px-5 py-24 sm:px-6 lg:px-8 lg:py-32"
+  >
+
+    <div
+      class="mx-auto max-w-7xl"
+    >
+
+      <div class="max-w-2xl">
+
+        <p
+          class="text-xs font-bold uppercase tracking-[.24em] text-leaf"
+        >
+          Explore Sri Lanka
+        </p>
+
+
+        <h2
+          class="mt-3 font-display text-4xl font-bold sm:text-5xl"
+        >
+          Places worth wandering.
+        </h2>
+
+      </div>
+
+
+      <div
+        class="mt-10 grid gap-4 md:grid-cols-12"
+      >
+
+
+        <!-- GALLE -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl md:col-span-7"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Morning%20view%20of%20Tangalla%20beach%2C%20Sri%20Lanka.jpg?width=1400"
+            alt="Southern coast Sri Lanka"
+            class="card-img h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Beach%20of%20Tangalla.jpg?width=1400';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-7 text-white"
+          >
+
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-white/70"
+            >
+              Southern Coast
+            </p>
+
+
+            <h3
+              class="mt-1 font-display text-3xl font-bold"
+            >
+              Galle & The Coast
+            </h3>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- ELLA -->
+
+        <a
+          href="#contact"
+          class="group relative h-80 overflow-hidden rounded-3xl md:col-span-5"
+        >
+
+          <!-- ELLA SRI LANKA IMAGE -->
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Ella%20Gap%20%28Valley%29%2C%20mountains%20of%20Sri%20Lanka.jpg?width=1400"
+            alt="Ella Gap mountains Sri Lanka"
+            class="card-img h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Ella%2C%20Sri%20Lanka%2C%20Mountains%20in%20clouds%202.jpg?width=1400';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-7 text-white"
+          >
+
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-white/70"
+            >
+              Hill Country
+            </p>
+
+
+            <h3
+              class="mt-1 font-display text-3xl font-bold"
+            >
+              Ella Sri Lanka
+            </h3>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- KANDY -->
+
+        <a
+          href="#contact"
+          class="group relative h-72 overflow-hidden rounded-3xl md:col-span-5"
+        >
+
+          <!-- KANDY IMAGE -->
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/20160126%20Sri%20Lanka%204020%20Kandy%20sRGB%20%2825468941340%29.jpg?width=1400"
+            alt="Kandy Sri Lanka"
+            class="card-img h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/20160126%20Sri%20Lanka%204025%20Kandy%20sRGB%20%2825648664742%29.jpg?width=1400';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-7 text-white"
+          >
+
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-white/70"
+            >
+              Central Sri Lanka
+            </p>
+
+
+            <h3
+              class="mt-1 font-display text-3xl font-bold"
+            >
+              Kandy Sri Lanka
+            </h3>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- SIGIRIYA -->
+
+        <a
+          href="#contact"
+          class="group relative h-72 overflow-hidden rounded-3xl md:col-span-3"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%20Sri%20Lanka.jpg?width=1000"
+            alt="Sigiriya Rock Sri Lanka"
+            class="card-img h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/20160124%20Sri%20Lanka%203826%20Sigiriya%20sRGB%20%2825649808532%29.jpg?width=1000';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-white/70"
+            >
+              Cultural Triangle
+            </p>
+
+
+            <h3
+              class="mt-1 font-display text-2xl font-bold"
+            >
+              Sigiriya
+            </h3>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- YALA -->
+
+        <a
+          href="#contact"
+          class="group relative h-72 overflow-hidden rounded-3xl md:col-span-4"
+        >
+
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Elephant%20in%20Yala.jpg?width=1200"
+            alt="Yala National Park elephant Sri Lanka"
+            class="card-img h-full w-full object-cover"
+            onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Elefant%20Yala%20Nationalpark.jpg?width=1200';"
+          />
+
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+          ></div>
+
+
+          <div
+            class="absolute bottom-0 p-6 text-white"
+          >
+
+            <p
+              class="text-xs font-bold uppercase tracking-widest text-white/70"
+            >
+              Wildlife
+            </p>
+
+
+            <h3
+              class="mt-1 font-display text-2xl font-bold"
+            >
+              Yala & Udawalawe
+            </h3>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       QUOTE
+  ======================================================= -->
+
+  <section
+    class="px-5 py-24 sm:px-6 lg:px-8 lg:py-28"
+  >
+
+    <div
+      class="mx-auto max-w-4xl text-center"
+    >
+
+      <div
+        class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-sand text-forest"
+      >
+
+        <i
+          data-lucide="quote"
+          class="h-6 w-6"
+        ></i>
+
+      </div>
+
+
+      <blockquote
+        class="mt-8 font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl"
+      >
+        “The itinerary matters —
+        but the moments between the stops matter more.”
+      </blockquote>
+
+
+      <p
+        class="mt-6 text-sm text-slate-500"
+      >
+        The Ceylon Wander philosophy
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       CONTACT
+  ======================================================= -->
+
+  <section
+    id="contact"
+    class="px-5 pb-10 sm:px-6 lg:px-8"
+  >
+
+    <div
+      class="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-forest"
+    >
+
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Haputale%2C%20Sri%20Lanka%2C%20Trees%20in%20clouds%2C%20Tea%20estate.jpg?width=1800"
+        alt=""
+        class="absolute inset-0 h-full w-full object-cover opacity-20"
+        onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Ella%2C%20Sri%20Lanka%2C%20Mountains%20in%20clouds%202.jpg?width=1800';"
+      />
+
+
+      <div
+        class="absolute inset-0 bg-forest/60"
+      ></div>
+
+
+      <div
+        class="relative grid gap-12 px-7 py-14 sm:px-10 lg:grid-cols-[1.2fr_.8fr] lg:px-14 lg:py-16"
+      >
+
+        <div class="text-white">
+
+          <p
+            class="text-xs font-bold uppercase tracking-[.25em] text-emerald-200"
+          >
+            Your Sri Lanka starts here
+          </p>
+
+
+          <h2
+            class="mt-4 font-display text-4xl font-bold leading-tight sm:text-5xl"
+          >
+            Tell us the trip you have in mind.
+          </h2>
+
+
+          <p
+            class="mt-5 max-w-xl text-sm leading-7 text-white/70"
+          >
+            Share your dates, number of travellers and the experiences
+            you would love to discover. We will help shape the journey.
+          </p>
+
+
+          <div
+            class="mt-8 flex flex-col gap-3 sm:flex-row"
+          >
+
+            <a
+              href="mailto:info@ceylonwanderescapes.lk?subject=Sri%20Lanka%20Trip%20Enquiry"
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-bold text-forest hover:bg-emerald-50"
+            >
+
+              Email Us
+
+              <i
+                data-lucide="mail"
+                class="h-4 w-4"
+              ></i>
+
+            </a>
+
+
+            <a
+              href="https://wa.me/94742230809"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-4 text-sm font-semibold text-white hover:bg-white/10"
+            >
+
+              WhatsApp
+
+              <i
+                data-lucide="message-circle"
+                class="h-4 w-4"
+              ></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form
+          action="mailto:info@ceylonwanderescapes.lk"
+          method="post"
+          enctype="text/plain"
+          class="rounded-3xl border border-white/10 bg-black/10 p-6 backdrop-blur-xl"
+        >
+
+          <p
+            class="text-xs font-bold uppercase tracking-[.2em] text-emerald-200"
+          >
+            Quick enquiry
+          </p>
+
+
+          <div
+            class="mt-5 grid gap-3"
+          >
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+              class="w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/40"
+            />
+
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+              class="w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/40"
+            />
+
+
+            <input
+              type="text"
+              name="travel_dates"
+              placeholder="Travel dates"
+              class="w-full rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/40"
+            />
+
+
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Tell us about your dream trip..."
+              class="w-full resize-none rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/40"
+            ></textarea>
+
+
+            <button
+              type="submit"
+              class="mt-1 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-forest transition hover:bg-emerald-50"
+            >
+              Send Enquiry
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer
+    class="px-5 pb-10 pt-16 sm:px-6 lg:px-8"
+  >
+
+    <div class="mx-auto max-w-7xl">
+
+      <div
+        class="grid gap-10 border-b border-slate-200 pb-12 md:grid-cols-[1.4fr_.7fr_.7fr_1fr]"
+      >
+
+
+        <!-- BRAND -->
+
+        <div>
+
+          <a
+            href="#"
+            class="flex items-center gap-4"
+          >
+
+            <div
+              class="rounded-xl border border-slate-100 bg-white p-1.5 shadow-sm"
+            >
+
+              <img
+                src="ceylon-wander-logo.png"
+                alt="Ceylon Wander Escapes"
+                class="h-20 w-20 object-contain"
+              />
+
+            </div>
+
+
+            <div>
+
+              <div
+                class="font-display text-xl font-bold leading-none"
+              >
+                Ceylon Wander
+              </div>
+
+              <div
+                class="mt-1 text-[10px] font-bold uppercase tracking-[.28em] text-gold"
+              >
+                Escapes
+              </div>
+
+            </div>
+
+          </a>
+
+
+          <p
+            class="mt-5 max-w-sm text-sm leading-7 text-slate-500"
+          >
+            Thoughtfully designed Sri Lanka journeys for travellers who
+            want more than a holiday — they want a story worth remembering.
+          </p>
+
+        </div>
+
+
+
+        <!-- EXPLORE -->
+
+        <div>
+
+          <h3
+            class="text-xs font-bold uppercase tracking-widest text-forest"
+          >
+            Explore
+          </h3>
+
+
+          <div
+            class="mt-5 grid gap-3 text-sm text-slate-500"
+          >
+
+            <a
+              href="#experiences"
+              class="hover:text-forest"
+            >
+              Experiences
+            </a>
+
+            <a
+              href="#journeys"
+              class="hover:text-forest"
+            >
+              Journeys
+            </a>
+
+            <a
+              href="#destinations"
+              class="hover:text-forest"
+            >
+              Destinations
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div>
+
+          <h3
+            class="text-xs font-bold uppercase tracking-widest text-forest"
+          >
+            Company
+          </h3>
+
+
+          <div
+            class="mt-5 grid gap-3 text-sm text-slate-500"
+          >
+
+            <a
+              href="#about"
+              class="hover:text-forest"
+            >
+              About Us
+            </a>
+
+            <a
+              href="#contact"
+              class="hover:text-forest"
+            >
+              Contact
+            </a>
+
+            <a
+              href="#contact"
+              class="hover:text-forest"
+            >
+              Plan Your Trip
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+          <h3
+            class="text-xs font-bold uppercase tracking-widest text-forest"
+          >
+            Contact
+          </h3>
+
+
+          <div
+            class="mt-5 grid gap-4 text-sm text-slate-500"
+          >
+
+            <a
+              href="tel:+94742230809"
+              class="flex items-center gap-3 hover:text-forest"
+            >
+
+              <i
+                data-lucide="phone"
+                class="h-4 w-4"
+              ></i>
+
+              +94 74 223 0809
+
+            </a>
+
+
+            <a
+              href="mailto:info@ceylonwanderescapes.lk"
+              class="flex items-center gap-3 break-all hover:text-forest"
+            >
+
+              <i
+                data-lucide="mail"
+                class="h-4 w-4"
+              ></i>
+
+              info@ceylonwanderescapes.lk
+
+            </a>
+
+
+            <a
+              href="https://wa.me/94742230809"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-3 hover:text-forest"
+            >
+
+              <i
+                data-lucide="message-circle"
+                class="h-4 w-4"
+              ></i>
+
+              WhatsApp
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FOOTER BOTTOM -->
+
+      <div
+        class="flex flex-col gap-3 pt-7 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between"
+      >
+
+        <p>
+          ©
+          <span id="year"></span>
+          Ceylon Wander Escapes.
+          All rights reserved.
+        </p>
+
+
+        <p>
+          Explore · Experience · Sri Lanka
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- FLOATING WHATSAPP -->
+
+  <a
+    href="https://wa.me/94742230809"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+    class="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-2xl transition hover:-translate-y-1"
+  >
+
+    <i
+      data-lucide="message-circle"
+      class="h-6 w-6"
+    ></i>
+
+  </a>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    lucide.createIcons();
+
+
+    /* YEAR */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    /* MOBILE MENU */
+
+    const menuButton =
+      document.getElementById("menuButton");
+
+    const mobileMenu =
+      document.getElementById("mobileMenu");
+
+
+    menuButton.addEventListener(
+      "click",
+      function () {
+
+        mobileMenu.classList.toggle("hidden");
+
+        const icon =
+          menuButton.querySelector("svg");
+
+
+        if (icon) {
+
+          icon.outerHTML =
+            mobileMenu.classList.contains("hidden")
+
+              ? '<i data-lucide="menu" class="h-5 w-5"></i>'
+
+              : '<i data-lucide="x" class="h-5 w-5"></i>';
+
+          lucide.createIcons();
+
+        }
+
+      }
+    );
+
+
+    /* CLOSE MOBILE MENU */
+
+    mobileMenu
+      .querySelectorAll("a")
+      .forEach(
+        function (link) {
+
+          link.addEventListener(
+            "click",
+            function () {
+
+              mobileMenu.classList.add("hidden");
+
+            }
+          );
+
+        }
+      );
+
+  </script>
+
+</body>
+
+</html>
