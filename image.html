@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceylon Wander Escapes | Image</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #f5efe5 0%, #ecf7f1 100%);
+      }
+
+      .image-frame {
+        box-shadow: 0 30px 70px rgba(16, 37, 29, 0.18);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex items-center justify-center px-6 py-10 text-ink">
+    <main class="w-full max-w-5xl">
+      <section class="rounded-[32px] bg-white/80 p-5 shadow-soft backdrop-blur-sm sm:p-8 lg:p-10">
+        <div class="mb-6 flex items-center justify-between gap-4">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-700">Travel Brand</p>
+            <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Ceylon Wander Escapes</h1>
+          </div>
+
+          <a
+            href="index.html"
+            class="rounded-full bg-forest px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
+          >
+            Back to Home
+          </a>
+        </div>
+
+        <div class="overflow-hidden rounded-[28px] border border-emerald-100 bg-sand image-frame">
+          <img
+            src="ceylon-wander-logo.png"
+            alt="Ceylon Wander Escapes logo"
+            class="h-[420px] w-full object-contain bg-white sm:h-[520px]"
+          />
+        </div>
+
+        <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.22em] text-emerald-700">Featured image</p>
+            <p class="mt-2 text-lg text-slate-700">A clean, premium visual for the travel brand.</p>
+          </div>
+
+          <button
+            class="rounded-full bg-gold px-5 py-3 text-sm font-bold text-ink transition hover:scale-[1.02]"
+          >
+            Download Image
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
