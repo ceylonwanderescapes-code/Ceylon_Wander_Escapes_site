@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sun & Beach | Ceylon Wander Escapes — tropical beaches, surf, sunsets and slow coastal journeys in Sri Lanka.">
+<title>Sun & Beach | Ceylon Wander Escapes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#0d2f24;--ink:#17231e;--cream:#f5f0e7;--paper:#fffdf9;--muted:#6d7770;--gold:#b88945;--line:#17231e1a;--shadow:0 24px 70px #0d2f241a;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.7 "DM Sans",Arial,sans-serif;overflow-x:hidden}a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}
+.topbar{position:sticky;top:0;z-index:50;background:#0d2f24f2;color:#fff;backdrop-filter:blur(16px);border-bottom:1px solid #fff1}
+.nav{max-width:var(--max);margin:auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.mark{width:46px;height:46px;border-radius:14px;overflow:hidden;background:#fff}.mark img{object-fit:contain}.brand-name{font:700 1.15rem/1 "Playfair Display",serif}.brand-sub{margin-top:5px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+.links{display:flex;gap:22px;font-size:.9rem}.links a{text-decoration:none;opacity:.9}.links a:hover{opacity:1}.cta-nav{padding:11px 17px;background:#fff;color:var(--forest);text-decoration:none;font-weight:700;border-radius:999px;white-space:nowrap}
+.container{max-width:var(--max);margin:auto;padding:0 24px}.eyebrow{font-size:.73rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:14px}h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.04;margin:0}
+.hero{min-height:88vh;position:relative;display:flex;align-items:flex-end;color:#fff;overflow:hidden}.hero-bg{position:absolute;inset:0}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#071813dd 0%,#0718137a 48%,#07181318 100%),linear-gradient(0deg,#071813bc 0%,transparent 58%)}.hero-inner{position:relative;z-index:1;max-width:1280px;width:100%;margin:auto;padding:110px 24px 78px}.hero-copy{max-width:820px}.hero h1{font-size:clamp(3.6rem,8vw,7.4rem);letter-spacing:-.045em}.hero p{max-width:690px;margin:22px 0 0;color:#fffc;font-size:1.06rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 18px;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid #fff3;transition:.25s transform}.btn:hover{transform:translateY(-2px)}.primary{background:#fff;color:var(--forest)}.secondary{background:#ffffff14;color:#fff}.scroll{position:absolute;right:30px;bottom:25px;writing-mode:vertical-rl;letter-spacing:.2em;text-transform:uppercase;font-size:.68rem;opacity:.65}
+.section{padding:88px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.head h2{font-size:clamp(2.6rem,5vw,4.5rem)}.head p{max-width:600px;margin:0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}.card{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:0 14px 40px #0d2f240d}.card h3{font-size:1.9rem;margin-bottom:12px}.card p{margin:0;color:var(--muted)}.dark{background:var(--forest);color:#fff;position:relative;overflow:hidden}.dark p{color:#fffc}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}.stat{border-top:1px solid #fff2;padding-top:13px}.stat strong{display:block;font:1.2rem "Playfair Display",serif}.stat span{font-size:.76rem;color:#fffa}
+.feature{display:grid;grid-template-columns:1.12fr .88fr;gap:20px;margin-top:22px}.feature-photo{min-height:610px;border-radius:30px;overflow:hidden;position:relative;box-shadow:var(--shadow)}.feature-photo:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#000b)}.feature-caption{position:absolute;z-index:1;left:25px;right:25px;bottom:22px;color:#fff}.feature-caption strong{display:block;font:2rem "Playfair Display",serif}.feature-copy{display:flex;flex-direction:column;justify-content:center}.pill{display:inline-flex;width:max-content;background:#efe4d1;color:#695530;padding:7px 11px;border-radius:999px;font-size:.72rem;font-weight:700;margin-bottom:18px}.feature-list{margin:20px 0 0;padding:0;list-style:none;display:grid;gap:11px;color:#56615a}.feature-list li:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin:0 10px 1px 0}
+.gallery{display:grid;grid-template-columns:1.15fr .85fr;grid-auto-rows:250px;gap:18px}.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:24px;box-shadow:0 16px 34px #0d2f2412}.gallery figure:first-child{grid-row:span 2}.gallery figure:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#000b)}.gallery figcaption{position:absolute;z-index:1;left:20px;right:20px;bottom:17px;color:#fff}.gallery strong{display:block;font:1.5rem "Playfair Display",serif}.gallery span{font-size:.78rem;opacity:.82}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.place{background:var(--paper);border:1px solid var(--line);border-radius:24px;overflow:hidden;transition:.28s transform,.28s box-shadow}.place:hover{transform:translateY(-5px);box-shadow:0 18px 50px #0d2f2418}.photo{height:265px}.place-body{padding:24px}.tag{display:inline-flex;background:#efe4d1;color:#695530;padding:6px 10px;border-radius:999px;font-size:.72rem;font-weight:700;margin-bottom:12px}.place h3{font-size:1.65rem}.place p{color:var(--muted);font-size:.91rem;margin:10px 0 0}
+.band{background:var(--forest);color:#fff;padding:82px 0}.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.band h2{font-size:clamp(2.7rem,5vw,4.7rem)}.band p{color:#fffc;max-width:620px}.rituals{display:grid;grid-template-columns:1fr 1fr;gap:12px}.ritual{padding:20px;border:1px solid #fff2;border-radius:20px;background:#ffffff0b}.ritual strong{display:block;font:1.2rem "Playfair Display",serif}.ritual span{font-size:.82rem;color:#fffa}
+.bottom{padding:82px 0}.bottom-box{padding:46px;border-radius:32px;background:linear-gradient(120deg,#0d2f24f7,#0d2f24ba),url("https://images.unsplash.com/photo-1580910531902-1112518b26ea?auto=format&fit=crop&fm=jpg&q=80&w=1800") center/cover;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:28px;box-shadow:var(--shadow)}.bottom-box h2{font-size:clamp(2.3rem,4vw,4rem)}.bottom-box p{max-width:650px;color:#fffc}
+footer{background:#09221b;color:#fffb;padding:27px 0;font-size:.84rem}.foot{max-width:var(--max);padding:0 24px;margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}.foot a{color:#fff;text-decoration:none}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:980px){.links{display:none}.two,.feature,.band-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.feature-photo{min-height:480px}.bottom-box{flex-direction:column;align-items:flex-start}}
+@media(max-width:700px){.nav{padding:12px 16px}.container{padding:0 16px}.hero-inner{padding:98px 16px 62px}.hero h1{font-size:clamp(3.1rem,15vw,4.8rem)}.scroll{display:none}.section{padding:60px 0}.head{display:block}.head p{margin-top:12px}.card{padding:26px}.stats,.cards,.rituals{grid-template-columns:1fr}.feature-photo{min-height:390px}.gallery{grid-template-columns:1fr;grid-auto-rows:240px}.gallery figure:first-child{grid-row:span 1}.bottom-box{padding:30px 24px}.actions{flex-direction:column;align-items:stretch}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<nav class="nav">
+<a class="brand" href="index.html">
+<span class="mark"><img src="ceylon-wander-logo.png" alt="Ceylon Wander Escapes logo"></span>
+<span><strong class="brand-name">Ceylon Wander</strong><small class="brand-sub">Escapes</small></span>
+</a>
+<div class="links">
+<a href="#about">The feeling</a><a href="#gallery">Gallery</a><a href="#places">Beaches</a><a href="#experiences">Experiences</a>
+</div>
+<a class="cta-nav" href="index.html#contact">Plan My Trip ↗</a>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="hero-bg"><img src="https://images.unsplash.com/photo-1580910531902-1112518b26ea?auto=format&fit=crop&fm=jpg&q=80&w=2000" alt="Tropical Sri Lankan beach"></div>
+<div class="hero-inner"><div class="hero-copy reveal">
+<div class="eyebrow">Sun & Beach · Sri Lanka</div>
+<h1>Salt air. Golden light. No rush.</h1>
+<p>Follow the coast at an easier pace — warm sand, palm-framed bays, calm swims, surf mornings and long evenings by the sea.</p>
+<div class="actions"><a class="btn primary" href="#places">Explore the coast</a><a class="btn secondary" href="#experiences">Find your rhythm ↓</a></div>
+</div></div><div class="scroll">Scroll to discover</div>
+</section>
+
+<section class="section" id="about"><div class="container">
+<div class="head reveal"><div><div class="eyebrow">Sun & Beach</div><h2>A shoreline for every mood.</h2></div><p>Beach life in Sri Lanka can be soft and slow, playful and surfy, quiet and secluded, or full of little places to eat, wander and watch the sunset.</p></div>
+<div class="two">
+<article class="card reveal"><h3>Make room for the unplanned.</h3><p>Start with the essentials, then leave space for the best moments: an extra swim, a roadside king coconut, a café discovered on a walk, or a sunset that makes you stay a little longer.</p></article>
+<article class="card dark reveal"><div class="eyebrow">Ceylon Wander Escapes</div><h3>Coastal days, beautifully balanced.</h3><p>Combine oceanfront stays with surf, boat time, local dining, wellness and relaxed sightseeing so every day feels effortless rather than over-scheduled.</p><div class="stats"><div class="stat"><strong>Slow</strong><span>Beach walks & mornings</span></div><div class="stat"><strong>Wild</strong><span>Surf, sea & wildlife</span></div><div class="stat"><strong>Golden</strong><span>Sunsets & warm evenings</span></div></div></article>
+</div>
+<div class="feature">
+<figure class="feature-photo reveal"><img src="https://images.unsplash.com/photo-1734279135136-dcaca9fdffaf?auto=format&fit=crop&fm=jpg&q=80&w=1800" alt="Mirissa beach at sunset"><figcaption class="feature-caption"><strong>Mirissa · Golden-hour coast</strong><span>Coconut palms, warm sand and a slow south-coast evening.</span></figcaption></figure>
+<article class="card feature-copy reveal"><span class="pill">Signature day</span><h3>The perfect beach day.</h3><p>Wake slowly, take a swim before breakfast, spend a little time in the shade, enjoy a local lunch and let the afternoon become golden. Finish with the sea breeze and dinner close to the water.</p><ul class="feature-list"><li>Oceanfront or walk-to-beach stays</li><li>Surf lessons or relaxed sea time</li><li>Boat trips and coastal viewpoints</li><li>Fresh seafood, cafés and sunset dinners</li></ul></article>
+</div>
+</div></section>
+
+<section class="section" id="gallery"><div class="container">
+<div class="head reveal"><div><div class="eyebrow">Coastal gallery</div><h2>See the feeling.</h2></div><p>Choose a mood and let us shape the rest of the journey around it.</p></div>
+<div class="gallery">
+<figure class="reveal"><img src="https://images.unsplash.com/photo-1734279135136-dcaca9fdffaf?auto=format&fit=crop&fm=jpg&q=80&w=1800" alt="Golden beach"><figcaption><strong>Golden-hour horizons</strong><span>Sunset walks · warm evenings · ocean views</span></figcaption></figure>
+<figure class="reveal"><img src="https://images.unsplash.com/photo-1645839451285-6010ab4a47d6?auto=format&fit=crop&fm=jpg&q=80&w=1400" alt="Palm-lined beach"><figcaption><strong>Barefoot mornings</strong><span>Soft sand · shade · easy swims</span></figcaption></figure>
+<figure class="reveal"><img src="https://images.unsplash.com/photo-1653480325396-4d926c844958?auto=format&fit=crop&fm=jpg&q=80&w=1400" alt="Boat on a Sri Lankan beach"><figcaption><strong>Life by the water</strong><span>Boats · coves · open sea</span></figcaption></figure>
+</div></div></section>
+
+<section class="section" id="places"><div class="container">
+<div class="head reveal"><div><div class="eyebrow">Coastal favourites</div><h2>Start with a shoreline.</h2></div><p>Build a route around one coast or blend several beach towns into a single private Sri Lankan journey.</p></div>
+<div class="cards">
+<article class="place reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1580910531902-1112518b26ea?auto=format&fit=crop&fm=jpg&q=80&w=1400" alt="Mirissa beach"></div><div class="place-body"><span class="tag">Relaxed south coast</span><h3>Mirissa</h3><p>A laid-back base for beach time, sunset light, ocean views and easy coastal days.</p></div></article>
+<article class="place reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1645839451285-6010ab4a47d6?auto=format&fit=crop&fm=jpg&q=80&w=1400" alt="Unawatuna beach"></div><div class="place-body"><span class="tag">Swim & unwind</span><h3>Unawatuna</h3><p>Palm-fringed shoreline, easy sea days and a lively coastal feel for travellers who like a little exploring.</p></div></article>
+<article class="place reveal"><div class="photo"><img src="https://images.unsplash.com/photo-1653480325396-4d926c844958?auto=format&fit=crop&fm=jpg&q=80&w=1400" alt="Traditional boat on a beach"></div><div class="place-body"><span class="tag">Island atmosphere</span><h3>South Coast</h3><p>Combine small coves, local beach towns and longer stretches of coast without losing the relaxed island rhythm.</p></div></article>
+</div></div></section>
+
+<section class="band" id="experiences"><div class="container"><div class="band-grid">
+<div class="reveal"><div class="eyebrow">Choose your rhythm</div><h2>Beach days can be as gentle or as active as you like.</h2><p>Pair restful hours with just enough adventure: a surf lesson, a boat ride, a coastal walk, a seafood lunch or a quiet wellness session.</p></div>
+<div class="rituals"><div class="ritual reveal"><strong>Surf & sea</strong><span>Beginner lessons, relaxed sessions & wave watching</span></div><div class="ritual reveal"><strong>Boat days</strong><span>Scenic cruises, swimming stops & coastal views</span></div><div class="ritual reveal"><strong>Beachside dining</strong><span>Fresh seafood, tropical fruit & long lunches</span></div><div class="ritual reveal"><strong>Wellness time</strong><span>Massage, yoga & slow mornings by the water</span></div></div>
+</div></div></section>
+
+<section class="bottom"><div class="container"><div class="bottom-box reveal"><div><div class="eyebrow">Make it yours</div><h2>Your beach escape, your rhythm.</h2><p>Tell us your dates, the coast you are drawn to and how you want the journey to feel. We'll shape the route, stays and experiences around you.</p></div><a class="btn primary" href="index.html#contact">Plan My Trip ↗</a></div></div></section>
+</main>
+
+<footer><div class="foot"><span>© <span id="year"></span> Ceylon Wander Escapes</span><a href="index.html">Back to Ceylon Wander Escapes</a></div></footer>
+<script>
+const io=new IntersectionObserver((entries,obs)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(x=>io.observe(x));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
